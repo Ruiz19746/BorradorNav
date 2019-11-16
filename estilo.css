@@ -1,52 +1,4 @@
-.card {
-    margin: 0 auto;
-}
-
-.card .carousel-item {
-    height: 200px;
-}
-
-.card .carousel-caption {
-    padding: 0;
-    right: 0;
-    left: 0;
-    color: #3d3d3d;
-}
-
-.card .carousel-caption h3 {
-    color: #3d3d3d;
-}
-
-.card .carousel-caption p {
-    line-height: 30px;
-}
-
-.card .carousel-caption .col-sm-3 {
-    display: flex;
-    align-items: center;
-}
-
-.card .carousel-caption .col-sm-9 {
-    text-align: left;
-}
-
-.navi a {
-    text-decoration: none;
-}
-
-a>.ico {
-    background-color: grey;
-    padding: 10px;
-}
-
-a:hover>.ico {
-    background-color: #666;
-}
-
-
-/*  */
-
-header,
+/* header,
 article,
 aside {
     background-color: grey;
@@ -57,14 +9,12 @@ body {
 }
 
 
-/*------Cabecera---------*/
 
 header {
     overflow: hidden;
 }
 
 
-/*---------Titulos-----------*/
 
 h1 {
     width: 100%;
@@ -79,7 +29,6 @@ aside {
 }
 
 
-/*-----Barra navegacion------*/
 
 .menu {
     text-align: center;
@@ -110,10 +59,6 @@ aside {
 }
 
 
-/*----------------------------*/
-
-
-/*------Secciones-------------*/
 
 section {
     width: 100%;
@@ -123,7 +68,6 @@ section {
 }
 
 
-/*-------------------------------*/
 
 .ejemplo1 img {
     height: 250px;
@@ -136,7 +80,6 @@ section {
 }
 
 
-/*------Seccion Superior------*/
 
 .articulos {
     width: calc(70% - 45px);
@@ -147,7 +90,6 @@ section {
 }
 
 
-/*-----------------------------*/
 
 .image img {
     display: block;
@@ -188,20 +130,9 @@ section {
 }
 
 
-/*------Menu Inferior------*/
-
-.menuInf {
-    overflow: hidden;
-    background-color: #333;
-}
-
-.menuInf ul {
-    list-style-type: none;
-    /*----Sacar puntos de la lista----*/
-}
 
 
-/*-------------------------------------------------------------------------*/
+
 
 @media screen and (max-width: 600px) {
     .articulos {
@@ -217,4 +148,39 @@ section {
         position: relative;
         left: calc(50% - 125px);
     }
+} */
+
+header {
+    background-color: grey;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/*------Cabecera---------*/
+
+header {
+    overflow: hidden;
+}
+
+
+/*---------Titulos-----------*/
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+
+/*-----Barra navegacion------*/
+
+.menuInf {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menuInf ul {
+    list-style-type: none;
 }
