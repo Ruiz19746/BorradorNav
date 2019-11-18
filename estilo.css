@@ -176,11 +176,60 @@ h1 {
 
 /*-----Barra navegacion------*/
 
-.menuInf {
-    overflow: hidden;
+#flex-container {
+    display: flex;
+}
+
+#flex-container div {
+    width: 50%;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+    background-color: cornflowerblue;
+}
+
+#flex-container .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     background-color: #333;
 }
 
-.menuInf ul {
+#flex-container .menu li {
+    float: left;
+}
+
+#flex-container .menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#flex-container .menu2 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+#flex-container .menu2 li {
+    float: right;
+}
+
+#flex-container .menu2 li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#flex-container .logo {
+    background-color: black;
+    color: rebeccapurple;
+    padding: 14px 16px;
+    text-align: center;
 }
