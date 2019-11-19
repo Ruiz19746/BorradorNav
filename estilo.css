@@ -1,199 +1,52 @@
-/* header,
-article,
-aside {
-    background-color: grey;
-}
-
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
 }
 
-
-
-header {
-    overflow: hidden;
-}
-
-
-
-h1 {
-    width: 100%;
-    text-align: center;
-}
-
-h2 {}
-
-article,
-aside {
-    padding: 40px;
-}
-
-
-
-.menu {
-    text-align: center;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.menu ul li {
-    display: inline-block;
-}
-
-.menu ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.menu ul li a:hover {
-    background-color: #028090;
-}
-
-
-
-section {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 10px;
-}
-
-
-
-.ejemplo1 img {
-    height: 250px;
-    width: 250px;
-    border-radius: 25%;
-}
-
-.ejemplo1 article {
-    width: calc(100% - 330px);
-}
-
-
-
-.articulos {
-    width: calc(70% - 45px);
-}
-
-.blqSuperior aside {
-    width: calc(30% - 45px);
-}
-
-
-
-.image img {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: .5s left cubic-bezier(.64, .57, .67, 1.53);
-}
-
-.image:hover img {
-    left: 300px;
-}
-
-.image img {
-    width: 200px;
-    height: 200px;
-}
-
-.image {
+.parallax {
+    background-image: url('F:/2º DAW/Diseño de Interfaces Web/Proyecto CSS/DIW-CSS/img/parallax_2.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    margin: 50px auto 50px;
 }
 
-.image figcaption {
+.parallax img {
+    max-width: 400px;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    display: block;
-    background: grey;
-    color: white;
-    font: 2em/1 "gill sans", sans-serif;
-    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
 }
 
 
-
-
-
-
-@media screen and (max-width: 600px) {
-    .articulos {
-        width: calc(100% - 10px);
-    }
-    .blqSuperior aside {
-        width: calc(100% - 90px);
-    }
-    .ejemplo1 article {
-        width: calc(100% - 10px);
-    }
-    .ejemplo1 img {
-        position: relative;
-        left: calc(50% - 125px);
-    }
-} */
-
-header {
-    background-color: grey;
-}
-
-body {
-    font-family: 'Quicksand', sans-serif;
-}
-
-
-/*------Cabecera---------*/
-
-header {
-    overflow: hidden;
-}
-
-
-/*---------Titulos-----------*/
-
-h1 {
-    width: 100%;
-    text-align: center;
-}
-
-
-/*-----Barra navegacion------*/
+/* NAv */
 
 #flex-container {
     display: flex;
 }
 
 #flex-container div {
-    width: 50%;
+    width: 33.3%;
     color: #FFF;
     text-align: center;
     font-size: 20px;
     font-family: Arial;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
 }
 
 #flex-container .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    /* background-color: #333; */
 }
 
 #flex-container .menu li {
@@ -228,8 +81,280 @@ h1 {
 }
 
 #flex-container .logo {
-    background-color: black;
+    /* background-color: black; */
     color: rebeccapurple;
-    padding: 14px 16px;
     text-align: center;
+}
+
+
+/* ejemplo del nav que quiero hacer */
+
+
+/* https://codepen.io/RomanKl/pen/LWmvOK */
+
+
+/* General */
+
+body {
+    margin: 0;
+    background: #fafafa;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#divider {
+    height: 200px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+/* Typography */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #808080;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: "Oxygen", "Open Sans", sans-serif;
+    color: #21252b;
+    font-weight: 500;
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #808080;
+}
+
+
+/* Header */
+
+header {
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/* Nav */
+
+.navbar {
+    background-color: #fffffb;
+    min-width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .04);
+    margin-bottom: 2em;
+    opacity: 0.96;
+    z-index: 9999;
+}
+
+.logo {
+    display: inline-block;
+    height: 50px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 2%;
+}
+
+nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #21252b;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e63347;
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+}
+
+nav a:hover [class^="fa"] {
+    color: #e63347;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.label-toggle {
+    display: none;
+}
+
+.wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.to-top {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        background-color: #fffffb;
+        display: block;
+        height: 0;
+        list-style-type: none;
+        opacity: 0;
+        text-align: left;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        width: 100%;
+        visibility: hidden;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        padding: 0;
+    }
+    nav li {
+        border-bottom: 1px solid #efefef;
+        color: #21252b;
+        display: block;
+        font-size: 1em;
+        width: 100%;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    nav li:hover {
+        color: #e63347;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+    }
+    nav span {
+        padding-left: 1em;
+    }
+    .to-top {
+        text-align: center;
+    }
+    .logo {
+        margin-left: 0.6em;
+    }
+    #menu-toggle:checked~ul {
+        opacity: 1;
+        height: 100%;
+        visibility: visible;
+    }
+    .label-toggle {
+        background: -webkit-linear-gradient(top, #21252b 0%, #21252b 20%, transparent 20%, transparent 40%, #21252b 40%, #21252b 60%, transparent 60%, transparent 80%, #21252b 80%, #21252b 100%);
+        background: linear-gradient(to bottom, #21252b 0%, #21252b 20%, transparent 20%, transparent 40%, #21252b 40%, #21252b 60%, transparent 60%, transparent 80%, #21252b 80%, #21252b 100%);
+        cursor: pointer;
+        display: block;
+        float: right;
+        height: 20px;
+        margin-top: 1.3em;
+        margin-right: 1em;
+        width: 20px;
+    }
+    .wrapper {
+        display: block;
+    }
+}
+
+
+/* Services */
+
+#services {
+    height: 800px;
+    padding-bottom: 80px;
+}
+
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+
+/* About */
+
+#about {
+    height: 800px;
+    padding-bottom: 80px;
+}
+
+
+/*Testimonials*/
+
+#testimonials {
+    height: 800px;
+    padding-bottom: 80px;
+}
+
+
+/* Contact */
+
+#contact {
+    height: 1000px;
+    padding-bottom: 80px;
+}
+
+
+/* Fixes */
+
+.padd {
+    padding-top: 160px;
+}
+
+.expand {
+    padding-top: 380px;
 }
