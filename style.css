@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    width: 100%;
 }
 
 .wrapper {
@@ -9,13 +10,15 @@ body {
     position: relative;
 }
 
+
+/* 
 nav {
     background: coral;
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
-}
+} */
 
 .sticky {
     position: fixed;
@@ -26,4 +29,9 @@ nav {
 .content {
     height: 200%;
     background: wheat;
+}
+
+nav {
+    background: blue;
+    height: 60px;
 }
